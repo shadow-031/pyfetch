@@ -22,21 +22,21 @@ python3 pyfetch.py<br>
 
 Output example (Linux):
 username@hostname
-───────────────
-        .--.         OS: Ubuntu 22.04
-       |o_o |        Host: user@machine
-       |:_/ |        Kernel: 6.8.0-35-generic
-      //   \\        Uptime: 2h 15m
-     (|     | )      Shell: /bin/bash
-    /'\_   _/`\      Resolution: 1920x1080
-    \___)=(___/      DE/WM: GNOME
-                     CPU: Intel i5-1135G7
-                     GPU: Intel Iris Xe
-                     Memory: 3.1 GB / 7.7 GB
-                     Disk: 52 GB / 120 GB (43%)
-                     Packages: apt: 1823, python: 88
-                     Battery: 97% (AC)
-                     IP: 192.0.x.x
+───────────────>br>
+        .--.         OS: Ubuntu 22.04<br>
+       |o_o |        Host: user@machine<br>
+       |:_/ |        Kernel: 6.8.0-35-generic<br>
+      //   \\        Uptime: 2h 15m<br>
+     (|     | )      Shell: /bin/bash<br>
+    /'\_   _/`\      Resolution: 1920x1080<br>
+    \___)=(___/      DE/WM: GNOME<br>
+                     CPU: Intel i5-1135G7<br>
+                     GPU: Intel Iris Xe<br>
+                     Memory: 3.1 GB / 7.7 GB<br>
+                     Disk: 52 GB / 120 GB (43%)<br>
+                     Packages: apt: 1823, python: 88<br>
+                     Battery: 97% (AC)<br>
+                     IP: 192.0.x.x<br>
 
 -> Runs fine without extra dependencies.<br>
 -> If psutil is installed, memory, battery, and uptime detection improve.<br>
