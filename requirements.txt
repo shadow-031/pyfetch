@@ -1,0 +1,2 @@
+# Optional dependency for better system info (memory, uptime, battery)
+psutil>=5.9.0
