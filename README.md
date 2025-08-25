@@ -22,7 +22,7 @@ python3 pyfetch.py<br>
 
 Output example (Linux):
 username@hostname
-───────────────>br>
+───────────────<br>
         .--.         OS: Ubuntu 22.04<br>
        |o_o |        Host: user@machine<br>
        |:_/ |        Kernel: 6.8.0-35-generic<br>
