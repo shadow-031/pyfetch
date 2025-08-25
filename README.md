@@ -15,10 +15,10 @@ Gathers system info:
 5. ASCII logos for Linux, Ubuntu, Arch, Debian, macOS, and Windows.
 6. Colorful output similar to Neofetch.
 
-Installation:-
-Clone the repo and run directly.
-Usage:
-python3 pyfetch.py
+Installation:-<br>
+Clone the repo and run directly.<br>
+Usage:<br>
+python3 pyfetch.py<br>
 
 Output example (Linux):
 username@hostname
@@ -38,9 +38,9 @@ username@hostname
                      Battery: 97% (AC)
                      IP: 192.0.x.x
 
--> Runs fine without extra dependencies.
--. If psutil is installed, memory, battery, and uptime detection improve.
--> Package detection works best on Linux/macOS with common package managers available.
+-> Runs fine without extra dependencies.<br>
+-> If psutil is installed, memory, battery, and uptime detection improve.<br>
+-> Package detection works best on Linux/macOS with common package managers available.<br>
 
 Contributing:-
 Pull requests and improvements are welcome!
