@@ -23,6 +23,8 @@ try:
 except Exception:
     psutil = None  # fallback to stdlib
 
+# --- helpers -----------------------------------------------------------------
+
 def run(cmd: list[str] | str, timeout: float = 1.5) -> str:
     """
     Run a shell command safely, return stdout (stripped). Empty string if fails.
@@ -57,6 +59,8 @@ def parse_uptime(seconds: float) -> str:
     if hours: parts.append(f"{hours}h")
     if minutes or not parts: parts.append(f"{minutes}m")
     return " ".join(parts)
+
+# --- gatherers ---------------------------------------------------------------
 
 def get_os() -> Tuple[str, str]:
     system = platform.system()
@@ -335,17 +339,11 @@ LOGOS = {
 "    ':::::'       ",
 ],
 "Windows":[
-"⠀⠀⠀⣤⣴⣾⣿⣿⣿⣿⣿⣶⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠ ",
-"⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⢰⣦⣄⣀⣀⣠⣴⣾⣿ ",
-"⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⡏⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿ ",⠀
-"⠀⠀⣼⣿⡿⠿⠛⠻⠿⣿⣿⡇⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⡿ ",⠀
-"⠀⠀⠉⠀⠀⠀⢀⠀⠀⠀⠈⠁⠀⢰⣿⣿⣿⣿⣿⣿⣿⣿⠇ ",⠀
-"⠀⠀⣠⣴⣶⣿⣿⣿⣷⣶⣤⠀⠀⠀⠈⠉⠛⠛⠛⠉⠉⠀⠀ ",⠀
-"⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⣶⣦⣄⣀⣀⣀⣤⣤⣶⠀⠀",
-"⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⢀⣿⣿⣿⣿⣿⣿⣿⣿⡟⠀⠀",
-" ⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀",
-"⢠⣿⡿⠿⠛⠉⠉⠉⠛⠿⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⠁⠀⠀",
-"⠘⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⢿⣿⣿⣿⣿⣿⠿⠛⠀⠀⠀",
+" ______________   ",
+"|  _  _  _  _  |  ",
+"|_| || || || |_|  ",
+"|_| || || || |_|  ",
+"|_|_||_||_||_|_|  ",
 ],
 }
 
